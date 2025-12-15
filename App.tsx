@@ -160,7 +160,9 @@ const App: React.FC = () => {
           {/* Right Column: Results (Sticky) */}
           <div className="lg:w-[400px] shrink-0">
             <ResultsDisplay 
-              results={results} 
+              results={results}
+              services={services}
+              config={config}
               onSaveHistory={saveToHistory} 
             />
           </div>
