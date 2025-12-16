@@ -11,7 +11,7 @@ Frontend-only pricing calculator for developers and freelancers.
 - No backend / no data collection
 
 ## Demo
-(link do GitHub Pages)
+[(link do GitHub Pages)](https://guiadomicroempreendedor-del.github.io/cal-sitecodex---calculadora-de-dev-web/)
 
 ## Usage
 Clone or open index.html
