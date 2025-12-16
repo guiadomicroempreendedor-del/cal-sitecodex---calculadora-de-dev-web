@@ -12,31 +12,31 @@
       body {
         font-family: 'Inter', sans-serif;
         background-color: #f8fafc;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
       }
+
+      #root {
+        flex: 1;
+      }
+
       /* footer-dev CSS */
-      
-.footer-dev a {
-    /* 1. Cor da Fonte: Azul Ciano Vibrante */
-    /* Você pode usar #00FFFF ou #00A9FF (um tom um pouco mais escuro e legível) */
-    color: #00A9FF; 
-    
-    /* 2. Remover a Sombra de Texto (FIM DO NEON) */
-    text-shadow: none; 
+      .footer-dev a {
+          color: #00A9FF; 
+          text-shadow: none; 
+          background-color: transparent;
+          padding: 0;
+          text-decoration: none; 
+          font-weight: bold; 
+      }
 
-    /* Estilos de Aparência (Mantidos para legibilidade e estrutura) */
-    background-color: transparent; /* Garante que o fundo do link seja transparente */
-    padding: 0; /* Remove preenchimento extra se houver */
-    text-decoration: none; /* Remove sublinhado padrão */
-    font-weight: bold; /* Mantém a fonte mais forte */
-}
-
-/* Sugestão de fundo do Footer para garantir o contraste */
-footer {
-    text-align: center; /* Centraliza o conteúdo */
-    /* Use um fundo escuro (preto, cinza escuro, ou azul marinho escuro) */
-    background-color: #111; 
-    padding: 15px 0;
-}
+      footer {
+          text-align: center; 
+          background-color: #111; 
+          padding: 15px 0;
+          width: 100%;
+      }
     </style>
   <script type="importmap">
 {
@@ -67,10 +67,14 @@ footer {
 </head>
   <body>
     <div id="root"></div>
-  </body>
-  <footer>
-    <div class="footer-dev">
-      <a href="https://sitecodex.sitecodex.workers.dev" rel="nofollow noopener" target="_blank"> desenvolvido por SiteCodeX </a>
+    
+    <footer>
+      <div class="footer-dev">
+        <a href="https://sitecodex.sitecodex.workers.dev" rel="nofollow noopener" target="_blank"> desenvolvido por SiteCodeX </a>
       </div>
-  </footer>
+    </footer>
+
+    <!-- Script de entrada da aplicação -->
+    <script type="module" src="./index.tsx"></script>
+  </body>
 </html>

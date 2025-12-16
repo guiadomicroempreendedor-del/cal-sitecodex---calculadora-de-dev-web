@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { CalculationResult, ServiceItem, GlobalConfig } from '../types';
-import { Calculator, Save, Copy, Download, Check, FileText } from 'lucide-react';
+import { Calculator, Save, Copy, Download, Check } from 'lucide-react';
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, Legend } from 'recharts';
 
 interface ResultsDisplayProps {
@@ -114,8 +114,8 @@ export const ResultsDisplay: React.FC<ResultsDisplayProps> = ({ results, service
         </div>
 
         {/* Visualization */}
-        <div className="h-48 mt-6 w-full">
-           <ResponsiveContainer width="100%" height="100%">
+        <div className="w-full mt-6" style={{ height: 200 }}>
+           <ResponsiveContainer width="100%" height="100%" minWidth={0}>
             <PieChart>
               <Pie
                 data={chartData}
