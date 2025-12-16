@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calc² da SiteCodex</title>
+    <!-- Mantendo Tailwind via CDN para simplicidade, mas o Vite permite instalação via PostCSS se desejar migrar futuramente -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <meta name="author" content="sitecodex"  />
-<link rel="author" href="https://sitecodex.sitecodex.workers.dev" />
+    <link rel="author" href="https://sitecodex.sitecodex.workers.dev" />
     <style>
       body {
         font-family: 'Inter', sans-serif;
@@ -38,30 +39,28 @@
           width: 100%;
       }
     </style>
+    <!--schema.org-->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "SiteCodeX",
+      "url": "https://sitecodex.sitecodex.workers.dev",
+      "description": "Desenvolvimento de sites e soluções web.",
+      "sameAs": []
+    }
+    </script>
   <script type="importmap">
 {
   "imports": {
     "react": "https://esm.sh/react@^19.2.3",
     "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
     "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
     "recharts": "https://esm.sh/recharts@^3.6.0",
-    "lucide-react": "https://esm.sh/lucide-react@^0.561.0"
+    "vite": "https://esm.sh/vite@^7.3.0",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
   }
-}
-</script>
-<!--schema.org-->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "SiteCodeX",
-  "url": "https://sitecodex.sitecodex.workers.dev",
-  "description": "Desenvolvimento de sites e soluções web.",
-  "sameAs": [
-    /* Adicione aqui links para suas redes sociais se tiver, ex: */
-    /* "https://https://www.linkedin.com/in/site-codex-69803a39a/", */
-    /* "https://https://www.instagram.com/sitecodex/#" */
-  ]
 }
 </script>
 </head>
@@ -74,7 +73,7 @@
       </div>
     </footer>
 
-    <!-- Script de entrada da aplicação -->
-    <script type="module" src="./index.tsx"></script>
+    <!-- Script de entrada do Vite -->
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>

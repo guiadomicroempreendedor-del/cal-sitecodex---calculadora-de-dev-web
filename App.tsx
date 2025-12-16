@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useMemo } from 'react';
 import { GlobalConfig, ServiceItem, CalculationResult, HistoryItem } from './types';
 import { DEFAULT_CONFIG, INITIAL_SERVICES, STORAGE_KEYS } from './constants';
 import { ConfigForm } from './components/ConfigForm';
