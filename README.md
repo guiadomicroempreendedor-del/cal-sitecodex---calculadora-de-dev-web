@@ -1,3 +1,25 @@
+# Dev Pricing Calculator
+
+Frontend-only pricing calculator for developers and freelancers.
+
+## Features
+- Hour-based pricing
+- Error margin
+- Tax estimation
+- Visual pie chart
+- Custom services
+- No backend / no data collection
+
+## Demo
+**Demo** [link do site](https://cal-sitecodex---calculadora-de-dev-web.pages.dev)
+
+## Usage
+Clone or open index.html
+
+## License
+MIT
+
+##Sistema usado no copycode
 <div align="center">
 <img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
 </div>
