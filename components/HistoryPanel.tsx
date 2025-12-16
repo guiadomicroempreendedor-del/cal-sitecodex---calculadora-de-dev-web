@@ -1,6 +1,6 @@
 import React from 'react';
 import { HistoryItem } from '../types';
-import { History, Trash2, Calendar, Clock } from 'lucide-react';
+import { History, Trash2, Calendar } from 'lucide-react';
 
 interface HistoryPanelProps {
   history: HistoryItem[];
