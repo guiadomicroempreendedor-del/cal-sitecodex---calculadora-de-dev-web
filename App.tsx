@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { GlobalConfig, ServiceItem, CalculationResult, HistoryItem } from './types';
-import { DEFAULT_CONFIG, INITIAL_SERVICES, STORAGE_KEYS } from './constants';
-import { ConfigForm } from './components/ConfigForm';
-import { ServiceManager } from './components/ServiceManager';
-import { ResultsDisplay } from './components/ResultsDisplay';
-import { HistoryPanel } from './components/HistoryPanel';
+import { DEFAULT_CONFIG, INITIAL_SERVICES, STORAGE_KEYS } from './constants.ts';
+import { ConfigForm } from './components/ConfigForm.tsx';
+import { ServiceManager } from './components/ServiceManager.tsx';
+import { ResultsDisplay } from './components/ResultsDisplay.tsx';
+import { HistoryPanel } from './components/HistoryPanel.tsx';
 import { LayoutDashboard } from 'lucide-react';
 
 const App: React.FC = () => {
